@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SIMPLOTEL ASSIGNMENT</title>
+  <style>
+    /* Your existing styles here */
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-color: #f0f0f0;
+    }
+
+    .navbar {
+      background-color: white;
+      overflow: hidden;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 10px 20px;
+      box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+    }
+
+    .navbar a {
+      color: #333;
+      text-decoration: none;
+      font-size: 18px;
+      margin: 0 10px;
+    }
+
+    .navbar a:hover {
+      color: #666;
+    }
+
+    .nav-text {
+      margin-left: 10%;
+      display: flex;
+      justify-content: space-around;
+    }
+
+    .icons {
+      display: flex;
+      align-items: center;
+      margin-left: 20px;
+    }
+
+    .icons img {
+      width: 24px;
+      margin-left: 10px;
+      vertical-align: middle;
+    }
+
+    .nav-text {
+      margin-left: 10%;
+      display: flex;
+      justify-content: space-around;
+    }
+
+    .full-width-picture {
+      width: 100%;
+      overflow: hidden;
+    }
+
+    .full-width-picture img {
+      width: 100%;
+      height: auto;
+    }
+
+    .down-container {
+      background: linear-gradient(to right, #fc019c, #ffa602);
+      text-align: center;
+      padding: 40px 0;
+    }
+
+
+
+    .order-button {
+      padding: 10px 20px;
+      background-color: rgba(255, 255, 255, 0.4);
+      color: black;
+      border: none;
+      cursor: pointer;
+      border-radius: 50px;
+      overflow: hidden;
+      height: 8%;
+      width: 10%;
+
+
+    }
+
+    .order-button {
+      margin-left: 48%;
+      margin-top: 5%;
+      display: flex;
+    align-items: center;
+    justify-content: center;
+    }
+
+    .pictures-container {
+      display: flex;
+      justify-content: space-around;
+      gap: 20px;
+      padding: 20px;
+    }
+
+    .picture-block {
+      width: calc(23.3% - 20px);
+      border: 1px solid #ccc;
+      border-radius: 0 20% 0 20%;
+      background-color: white;
+      text-align: center;
+      padding: 20px;
+    }
+
+    .picture-block img {
+      width: 95%;
+      height: 60%;
+      border-radius: 0 40% 0 0;
+      margin-bottom: 10px;
+    }
+    .overlay-container {
+    position: absolute;
+    top: 45%;
+    left: 5%;
+    width: 45%;
+    height: 35%;
+    background-color: rgba(255, 0, 0, 0.3); 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: white;
+    text-align: center;
+    z-index: 2; 
+  
+  }
+  .overlay-container h1{
+    font-size: 48px;
+    padding-right: 40%;
+  }
+  .overlay-container p{
+    text-align: left;
+  }
+  
+
+    /* Media queries for responsiveness */
+    @media (max-width: 768px) {
+      /* Adjust styles for tablets and mobile devices */
+      .nav-text {
+        margin-left: 0;
+        flex-direction: column;
+        align-items: center;
+      }
+
+      .nav-text a {
+        margin: 5px 0;
+      }
+
+      .icons {
+        margin-left: auto;
+        margin-right: 20px;
+      }
+
+      .full-width-picture h1 {
+        font-size: 32px;
+      }
+
+      .order-button {
+        margin-left: 40%;
+      }
+
+      .pictures-container {
+        flex-direction: column;
+        align-items: center;
+      }
+
+      .picture-block {
+        width: 80%;
+        border-radius: 20px;
+        margin-bottom: 20px;
+      }
+
+      .order-button-container {
+        text-align: center;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <!-- Your existing HTML content here -->
+
+
+    <div class="navbar" id="myNavbar">
+      <div class="nav-text">
+        <a href="#home"><b class="text">Home</b></a>
+        <a href="#order"><b class="text">Order</b></a>
+        <a href="#food"><b class="text">Food</b></a>
+        <a href="#restaurant"><b class="text">Restaurant</b></a>
+        <a href="#testimonials"><b class="text">Testimonials</b></a>
+        <a href="#contactus"><b class="text">Contact Us</b></a>
+      </div>
+      <div class="icons">
+        <img
+          src="https://th.bing.com/th/id/R.f318f08d985459e32a1bec7f491e34eb?rik=PRWmCTRrdlhpRg&riu=http%3a%2f%2fcdn.onlinewebfonts.com%2fsvg%2fimg_146192.png&ehk=%2fbLjaBQu%2fjqkmVZwaGzdBEXfmWaTM1zB2Y9QHOGC7wM%3d&risl=&pid=ImgRaw&r=0"
+          alt="Phone Icon">
+        <img src="https://www.kindpng.com/picc/m/20-203111_cart-clipart-shop-now-black-shopping-cart-icon.png"
+          alt="Shopping Cart Icon">
+      </div>
+    </div>
+  
+    <div class="full-width-picture">
+  
+      <img src="full_width_picture.jpg" alt="Full Width Picture">
+  
+      <div class="overlay-container">
+        <h1>LOREM IPSUM</h1>
+      
+          <p >
+            Lorem Ipsum has been the industry's standard dummy
+            text ever since the 1500s, when an unknown printer took
+            a galley of type and scrambled it to make a type
+            specimen book
+          </p>
+        
+        
+      </div>
+    </div>
+  
+    <div class="down-container">
+      <div class="order-button-container">
+        <h1  style="color: white; font-size: 10vh;">Order Now</h1>
+      </div>
+  
+      <div class="pictures-container">
+        <div class="picture-block">
+          <img src="picture1.jpg" alt="Picture 1">
+          <h3>BURGER</h3>
+          <p>Lorem Ipsum has been the industry's standard dummy text</p>
+        </div>
+        <div class="picture-block">
+          <img src="picture2.jpg" alt="Picture 2">
+          <h3>PIZZA</h3>
+          <p>Lorem Ipsum has been the industry's standard dummy text</p>
+        </div>
+        <div class="picture-block">
+          <img src="picture3.jpg" alt="Picture 3">
+          <h3>PASTA</h3>
+          <p>Lorem Ipsum has been the industry's standard dummy text</p>
+        </div>
+      </div>
+  
+      <div class="order-button-container">
+        <button class="order-button"><strong>
+            <h3>Order</h3>
+          </strong></button>
+      </div>
+    </div>
+  
+    <script>
+      function toggleNav() {
+        var navbar = document.getElementById("myNavbar");
+        if (navbar.className === "navbar") {
+          navbar.className += " responsive";
+        } else {
+          navbar.className = "navbar";
+        }
+      }
+    </script>
+  
+  
+
+  <script>
+    function toggleNav() {
+      var navbar = document.getElementById("myNavbar");
+      if (navbar.className === "navbar") {
+        navbar.className += " responsive";
+      } else {
+        navbar.className = "navbar";
+      }
+    }
+  </script>
+</body>
+
+</html>
